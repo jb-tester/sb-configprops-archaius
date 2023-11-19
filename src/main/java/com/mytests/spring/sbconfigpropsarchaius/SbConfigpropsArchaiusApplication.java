@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.Properties;
 
 @SpringBootApplication
-//@EnableConfigurationProperties(AppConfig.class)
+//@EnableConfigurationProperties(ArchInterface.class)
 public class SbConfigpropsArchaiusApplication  {
 
 

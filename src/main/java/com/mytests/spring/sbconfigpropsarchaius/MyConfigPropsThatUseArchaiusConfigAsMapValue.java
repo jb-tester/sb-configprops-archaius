@@ -1,6 +1,5 @@
 package com.mytests.spring.sbconfigpropsarchaius;
 
-import com.netflix.archaius.ConfigProxyFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
@@ -10,8 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-@ConfigurationProperties("my.cp")
-public class MyConfigProps {
+@ConfigurationProperties("my.cp1")
+public class MyConfigPropsThatUseArchaiusConfigAsMapValue {
 
 
 

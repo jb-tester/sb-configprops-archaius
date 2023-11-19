@@ -15,12 +15,16 @@ import java.util.Properties;
 public class BeansConfig {
 
     @Bean
-    public AppConfig appConfig(ConfigProxyFactory factory) {
-        return factory.newProxy(AppConfig.class);
+    public ArchInterface archInterface(ConfigProxyFactory factory) {
+        return factory.newProxy(ArchInterface.class);
     }
     @Bean
     public DummyInterface dummyInterface(ConfigProxyFactory factory) {
         return factory.newProxy(DummyInterface.class);
+    }
+    @Bean
+    public BooInterface booInterface(ConfigProxyFactory factory) {
+        return factory.newProxy(BooInterface.class);
     }
 
     @Bean
